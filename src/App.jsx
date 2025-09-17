@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 // Configuration
-const WHATSAPP_NUMBER = "22965123456"; // Remplacez par votre numéro
+const WHATSAPP_NUMBER = "2250584849917"; // Remplacez par votre numéro
 const WHATSAPP_MESSAGE = "Salut ! Je suis intéressé(e) par votre méthode pour stabiliser mes revenus à 200 000 FCFA/mois. Pouvez-vous m'en dire plus ?";
 
 // Fonction utilitaire WhatsApp
