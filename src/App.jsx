@@ -83,7 +83,7 @@ function App() {
 
         <main className="px-4 px-md-5">
           {/* Hero Section */}
-          <section className="d-flex min-vh-100 flex-column align-items-center justify-content-center text-center py-2">
+          <section className="d-flex min-vh-100 flex-column align-items-center justify-content-center text-center">
             <h1 className="fw-bold mb-3" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1.2 }}>
               Stabilisez vos revenus à{' '}
               <span style={{ color: 'var(--accent-green)' }}>200 000 FCFA/mois minimum</span>
