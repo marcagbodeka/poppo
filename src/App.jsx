@@ -4,15 +4,18 @@ import './App.css';
 
 // Configuration des numéros WhatsApp (pool de numéros)
 const WHATSAPP_NUMBERS = [
-  "2250103198335",
-  "22605268190",
-  "2250769992123", // Remplacez par vos vrais numéros
-  "2250584849917",
-  "22897838098",
-  "22605268190"
+  "22960965146", // oscar
+  "237675094640" // 
+  "2250103198335", //Stone
+  "22605268190", //La debrouille
+  "2250769992123", // Christ
+  "2250708407827", // mea
+  "23560567573", // yacouza
+  "22891030209", // evans
+  "22897838098", // sharlène
 ];
 
-const WHATSAPP_MESSAGE = "Salut ! Je suis intéressé(e) par votre méthode pour stabiliser mes revenus à 200 000 FCFA/mois. Pouvez-vous m'en dire plus ?";
+const WHATSAPP_MESSAGE = "Salut ! Je suis intéressé(e) par votre méthode pour stabiliser mes revenus. Pouvez-vous m'en dire plus ?";
 
 // Données des témoignages
 const TESTIMONIALS = [
