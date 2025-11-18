@@ -218,3 +218,4 @@ const testimonialStats = {
 ---
 
 **Système développé pour maximiser l'impact des témoignages et améliorer les taux de conversion grâce à un social proof dynamique et engageant.**
+

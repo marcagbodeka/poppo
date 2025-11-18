@@ -132,15 +132,32 @@ function App() {
 
   // Fonction utilitaire WhatsApp avec comptage
   const openWhatsApp = () => {
-    const currentNumber = WHATSAPP_NUMBERS[currentNumberIndex];
-    const encodedMessage = encodeURIComponent(WHATSAPP_MESSAGE);
-    
-    // Mettre à jour le compteur
-    updateClickCount();
-    localStorage.setItem('whatsappClickCount', (clickCount + 1).toString());
-    
-    // Ouvrir WhatsApp
-    window.open(`https://wa.me/${currentNumber}?text=${encodedMessage}`, '_blank');
+    try {
+      const currentNumber = WHATSAPP_NUMBERS[currentNumberIndex];
+      const encodedMessage = encodeURIComponent(WHATSAPP_MESSAGE);
+      
+      // Mettre à jour le compteur
+      updateClickCount();
+      localStorage.setItem('whatsappClickCount', (clickCount + 1).toString());
+      
+      // Construire l'URL WhatsApp
+      const whatsappUrl = `https://wa.me/${currentNumber}?text=${encodedMessage}`;
+      
+      // Sur mobile, utiliser window.location.href pour une meilleure compatibilité
+      // Sur desktop, on peut essayer window.open d'abord
+      if (isMobile) {
+        window.location.href = whatsappUrl;
+      } else {
+        // Pour desktop, ouvrir dans un nouvel onglet
+        window.open(whatsappUrl, '_blank');
+      }
+    } catch (error) {
+      console.error('Erreur lors de l\'ouverture de WhatsApp:', error);
+      // Fallback: essayer avec window.location.href même sur desktop
+      const currentNumber = WHATSAPP_NUMBERS[currentNumberIndex];
+      const encodedMessage = encodeURIComponent(WHATSAPP_MESSAGE);
+      window.location.href = `https://wa.me/${currentNumber}?text=${encodedMessage}`;
+    }
   };
 
   if (!isMobile) {
