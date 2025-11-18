@@ -4,15 +4,10 @@ import './App.css';
 
 // Configuration des numéros WhatsApp (pool de numéros)
 const WHATSAPP_NUMBERS = [
-  "22960965146", // oscar
-  "237675094640" // 
-  "2250103198335", //Stone
-  "22605268190", //La debrouille
-  "2250769992123", // Christ
-  "2250708407827", // mea
-  "23560567573", // yacouza
-  "22891030209", // evans
-  "22897838098", // sharlène
+  "237675094640",
+  "22960965146",
+  "243999386873",
+
 ];
 
 const WHATSAPP_MESSAGE = "Salut ! Je suis intéressé(e) par votre méthode pour stabiliser mes revenus. Pouvez-vous m'en dire plus ?";
